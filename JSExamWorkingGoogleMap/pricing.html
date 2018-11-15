@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Farrington Exam 2
+	</title>
+    <link rel="stylesheet" href="css/pricing.css" />
+  </head>
+  <body>
+    <div class="container login">
+      <form id="login" action="/login/" method="post">
+	  <h2 id="companyName">Myrtle Beach Homes</h2>
+        <div class="one-third column">
+		
+          <img src="img/logo.PNG" alt="logo" id="logo" />
+		<figcaption>Homes for pretentious beautiful people</figcaption>
+		
+        </div>
+        <div class="two-thirds column" id="main">
+          <fieldset>
+            <legend>Pricing</legend>
+			<div id="buttonHolder">
+            <a href="themenu.html" class="button">Menu</a>
+			<a href="listings.html" class="button">Listings</a>
+			<a href="maps.html" class="button">Maps</a>
+			<a href="services.html" class="button">Services</a>
+			<a href="pricing.html" class="button">Pricing</a>
+			</div>
+			
+			<div id="price-range">
+	    Min: <input type="text" id="minval" />
+		Max: <input type="text" id="maxval" /><br><br>
+		<div id="slider"></div>
+		<table class="center2" border id="thefeatures"><thead><th>Name</th><th>Star *</th><th>Cost ($)</th></thead></table>
+	  </div>
+	  <script src="js/jquery.js"></script>
+	  <script src="js/jquery.nouislider.js"></script>
+	  <script src="js/feature-pricing.js"></script>
+	  
+          </fieldset>
+        </div><!-- .two-thirds -->
+      </form>
+    </div><!-- .container -->
+    <script src="js/utilities.js"></script>
+    <script src="js/submit-event.js"></script>
+  </body>
+</html>

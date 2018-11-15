@@ -1,0 +1,176 @@
+*, *::before, *::after { box-sizing: inherit; }
+
+body { margin: 0; }
+
+html, body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	background-color: #ccf2ff;
+}
+
+h1 { font-size:36px }
+h2 { font-size:30px }
+h3 { font-size:24px }
+h4 { font-size:20px }
+h5 { font-size:18px }
+h6 { font-size:16px }
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+}
+
+/* Globals and Main */
+.container {
+	max-width: 980px;
+	margin: auto;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.container-half {
+	max-width: 548px;
+	margin: auto;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.left { float: left; }
+.right { float: right; }
+
+
+
+/* Heading */
+#heading-container {
+	width: 100%;
+	height: 92px;
+	color: #cc6699;
+	display: block;
+	margin-bottom: 48px;
+}
+#heading {
+	margin: 0 auto;
+}
+.heading-element {
+	height: inherit;
+	line-height: 92px;
+	text-align: center;
+}
+.heading-title {
+	margin: 0;
+	margin-right: 52px;
+}
+.heading-logo {
+	vertical-align: middle;
+	margin-left: 52px;
+}
+/* Options Page */
+.options-container {
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 72px;
+}
+
+.options-link {
+	text-align: center;
+	vertical-align: middle;
+	font: inherit;
+	display: inline-block;
+	overflow: hidden;
+	border: none;
+	color: #993333;
+	padding: 12px 24px;
+
+	text-decoration: none;
+	width: 80px;
+	margin: 0 auto;
+}
+.options-link:hover {
+	cursor: pointer;
+	background-color: white;
+}
+
+#main {
+	width: inherit;
+	color: #cc6699;
+}
+
+.acc, .menu {
+  background-color: transparent;
+  color: inherit;
+  margin: 0 auto;
+  padding: 0;
+	width: auto;
+	overflow-x: hidden;
+}
+
+.acc li {
+  padding: 0;
+  list-style-type: none;
+}
+
+.acc-control {
+	border: none;
+  background-color: #ccf2ff;
+  color: #993333;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+}
+
+.acc-panel {
+	display: none;
+	padding: 10px;
+	background-color: white;
+}
+.acc-panel p {
+	color: #cc6699;
+}
+
+@media only all and (max-width: 586px) {
+	#heading-container {
+		height: auto;
+	}
+	#heading * {
+		float: none;
+		margin: 0;
+	}
+}
+
+
+/* Form Syles */
+.input-area {
+	width: 98%;
+	border: none;
+	margin: 0;
+	font: inherit;
+	overflow: visible;
+	display: block;
+	padding-top: 16px;
+	padding-left: 8px;
+	padding-bottom: 16px;
+	resize: vertical;
+}
+.form-button {
+	text-align: center;
+	vertical-align: middle;
+	font: inherit;
+	display: inline-block;
+	overflow: hidden;
+	border: none;
+	color: #060606;
+	background-color: #FFFFFF;
+	padding: 12px 24px;
+}
+.form-button:hover {
+	cursor: pointer;
+	background-color: #a6a6a6;
+}
+
+/* Quote Page */
+/* Listings page */
+#listings-table {
+	text-align: center;
+	width: 100%;
+}

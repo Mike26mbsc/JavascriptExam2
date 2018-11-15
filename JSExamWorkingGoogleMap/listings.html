@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <title>Farrington Exam 2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+    <script src="js/jquery-1.11.0.js"></script>
+	<script src="js/lab4.js"></script>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</title>
+    <link rel="stylesheet" href="css/listings.css" />
+  </head>
+  <body>
+    <div class="container login">
+	<form id="login" action="/login/" method="post">     
+	  <h2 id="companyName">Myrtle Beach Homes</h2>
+        <div class="one-third column">
+		
+          <img src="img/logo.PNG" alt="logo" id="logo" />
+		<figcaption>Homes for pretentious beautiful people</figcaption>
+		 
+		
+        </div>
+        <div class="two-thirds column" id="main">
+          <fieldset>
+            <legend>Listings</legend>
+			<div id="buttonHolder">
+			<a href="themenu.html" class="button">Menu</a>
+			<a href="listings.html" class="button">Listings</a>
+			<a href="maps.html" class="button">Maps</a>
+			<a href="services.html" class="button">Services</a>
+			<a href="pricing.html" class="button">Pricing</a>
+			</div>
+			<table ng-controller="theregister" border>
+			
+      <tr><th>Owner</th><th>Address</th><th>Rooms</th><th>SqFt</th><th>Price</th></tr>
+      <tr ng-repeat="session in register">
+        <td>{{ session.Owner}}</td>
+        <td>{{ session.Address}}</td>
+        <td>{{ session.Rooms}}</td>
+        <td>{{ session.SqFt}}</td>
+		<td>{{ session.Price}}</td>
+      </tr>
+    </table>
+           
+          </fieldset>
+        </div><!-- .two-thirds -->
+      </form>
+    </div><!-- .container -->
+    <script src="js/utilities.js"></script>
+    <script src="js/submit-event.js"></script>
+  </body>
+</html>

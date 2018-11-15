@@ -1,0 +1,46 @@
+{
+    "register": [
+      {
+        "Owner": "Rusty Shackleford",
+        "Address": "112 Rainey St",
+        "Rooms": "5 Nights",
+		"SqFt": "100sqft",
+        "Price": "One million dollars"
+      },
+      {
+        "Owner": "Rusty Shackleford",
+        "Address": "112 Rainey St",
+        "Rooms": "5 Nights",
+		"SqFt": "100sqft",
+        "Price": "One million dollars"
+      },
+      {
+        "Owner": "Rusty Shackleford",
+        "Address": "112 Rainey St",
+        "Rooms": "5 Nights",
+		"SqFt": "100sqft",
+        "Price": "One million dollars"
+      },
+      {
+       "Owner": "Rusty Shackleford",
+        "Address": "112 Rainey St",
+        "Rooms": "5 Nights",
+		"SqFt": "100sqft",
+        "Price": "One million dollars"
+      },
+      {
+        "Owner": "Rusty Shackleford",
+        "Address": "112 Rainey St",
+        "Rooms": "5 Nights",
+		"SqFt": "100sqft",
+        "Price": "One million dollars"
+      },
+      {
+       "Owner": "Rusty Shackleford",
+        "Address": "112 Rainey St",
+        "Rooms": "5 Nights",
+		"SqFt": "100sqft",
+        "Price": "One million dollars"
+      }
+    ]
+}

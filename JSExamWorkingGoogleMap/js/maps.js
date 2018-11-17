@@ -1,8 +1,8 @@
-alert('reloading');
+//alert('reloading');
  var geocoder;
   var map;
   var address;
-  var forms=document.getElementById('codeForm');
+  
 
   //alert(address);
   //var address ="951 Shine Ave, Myrtle Beach, SC 29577";
@@ -31,10 +31,16 @@ alert('reloading');
 		mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+	
+	
     if (geocoder) {
+		
       geocoder.geocode( { 'address': event}, function(results, status) {
+		  
         if (status == google.maps.GeocoderStatus.OK) {
+			
           if (status != google.maps.GeocoderStatus.ZERO_RESULTS) {
+			  
           map.setCenter(results[0].geometry.location);
 
             var infowindow = new google.maps.InfoWindow(
@@ -47,6 +53,7 @@ alert('reloading');
                 map: map, 
                 title:address
             }); 
+			
             google.maps.event.addListener(marker, 'click', function() {
                 infowindow.open(map,marker);
             });
@@ -60,16 +67,26 @@ alert('reloading');
       });
     }	
   }
-  function checkAddress() {                             // Declare function
+  function checkAddress() {                             // Declare checkAddress() function
     var elMsg = document.getElementById('address'); 
-    alert(elMsg.value); 
+	var elAdd= document.getElementById('addressHolder'); 
+    //alert(elMsg.value);
+	elAdd.textContent = elMsg.value;
     address = elMsg.value;
 	initialize(address);
-	alert(address + " address inside check address");
+	//alert(address + " address inside check address");
     
 }
 
-var elForm = document.getElementById('addressButton');  // Get address input
+var elForm = document.getElementById('addressButton');  // Get reference to address button
+var elAddress = document.getElementById('address');
+elAddress.addEventListener("keyup", function(event) {
+    event.preventDefault();
+	if(event.keyCode === 13) {
+		elForm.click();
+		return false;
+	}
+});
 // When form submits call checkAddress()
 elForm.addEventListener('click', checkAddress, false);
 
